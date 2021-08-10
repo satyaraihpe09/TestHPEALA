@@ -3,12 +3,12 @@
     allowedOrigins="portal.azure.com"
     allowedMethods="GET"
     allowCredentials="true"
-    exposeHeaders="MyHeader"/>
+    exposeHeaders="*"/>
 
 <cors domain="/configurations/preflight"
     allowedOrigins="portal.azure.com"
     allowedMethods="OPTIONS, DELETE"
     allowCredentials="true"
-    allowedHeaders="MyOwnHeader1, MyOwnHeader2"
+    allowedHeaders="*"
     maxAge="10"/>
 </server>
