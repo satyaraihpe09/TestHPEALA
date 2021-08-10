@@ -1,0 +1,14 @@
+<server description="HPE ARM Template File">
+  <cors domain="/configurations/simple"
+    allowedOrigins="portal.azure.com"
+    allowedMethods="GET"
+    allowCredentials="true"
+    exposeHeaders="MyHeader"/>
+
+<cors domain="/configurations/preflight"
+    allowedOrigins="portal.azure.com"
+    allowedMethods="OPTIONS, DELETE"
+    allowCredentials="true"
+    allowedHeaders="MyOwnHeader1, MyOwnHeader2"
+    maxAge="10"/>
+</server>
